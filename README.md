@@ -1,23 +1,23 @@
-# WireOS
+# Girl-OS
 
-**The main repo for WireOS.**
+**The main repo for Girl-OS.**
 
-WireOS serves as a nice, stable, and maintained base for Vector CFW.
+Girl-OS serves as a girly vector cfw!!!! :3 :3 :3
 
-This builds the OS, the /anki programs (`wire-os-victor`), and puts it all into a final OTA. This repo can be thought of as `wire-os-oelinux`.
+This builds the OS, the /anki programs (`girl-os-victor`), and puts it all into a final OTA. This repo can be thought of as `girl-os-oelinux`.
 
 ## Submodules
 
 - /poky/poky -> [yoctoproject/poky](https://github.com/yoctoproject/poky) (master)
 - /poky/meta-openembedded -> [openembedded/meta-openembedded](https://github.com/openembedded/meta-openembedded) (master)
-- /anki/victor -> [wire-os-victor](https://github.com/os-vector/wire-os-victor) (main)
-  - Where all the personality code lives - the README there has more info
+- /anki/victor -> [wire-os-victor](https://github.com/The-Vector-Girl-Project/girl-os-victor) (main)
+  - Where all the girly personality code lives :3 - the README there has more info
 - /anki/wired -> [wired](https://github.com/os-vector/wired) (main)
-  - Little webserver with configuration options
+  - Little webserver with configuration options, not girlified :< (yet >:3)
 
 ## Prebuilt OTA:
 
-WireOS is in the dropdown box in [https://devsetup.froggitti.net/](https://devsetup.froggitti.net/). Put your unlocked bot into recovery mode (hold the button for 15 seconds on the charger), head to the site, choose wireOS, then go through the process.
+You can find one at the girly corner!!! (Temporarily hosted [here](http://modder.my.to:8000) and this WILL CHANGE)
 
 ## Build
 
@@ -38,8 +38,8 @@ sudo chmod 660 /var/run/docker.sock
 3. Clone and build:
 
 ```
-git clone https://github.com/os-vector/wire-os --recurse-submodules
-cd wire-os
+git clone https://github.com/The-Vector-Girl-Project/girl-os --recurse-submodules
+cd girl-os
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
 # example: ./build/build.sh -bt dev -v 1
@@ -48,17 +48,15 @@ cd wire-os
 
 ### Where is my OTA?
 
-`./_build/3.0.1.1.ota`
+`./_build/3.0.1.1.ota`, In "girl-os standards" this is a dev ota (beta ota), and if ever hosted, is to be labelled as such
 
 ## Development path
 
-- **Most work should be done in `wire-os-victor`. Generally, that's all you need to have cloned. That can be worked on on a less beefy Linux laptop or M-series MacBook. If you have a modern base WireOS OTA installed; you can clone `wire-os-victor`, make changes, build that standalone, and deploy that to your robot. This repo is more meant to be cloned to a build server, and built less often.**
+- **Most work should be done in `girl-os-victor`. Generally, that's all you need to have cloned. That can be worked on on a less beefy Linux laptop or M-series MacBook. If you have a modern base WireOS OTA installed; you can clone `w-os-victor`, make changes, build that standalone, and deploy that to your robot. This repo is more meant to be cloned to a build server, and built less often.**
 
 ##  Donate
 
-If you want to :P
-
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/kercre123)
+not yet
 
 ## Differences compared to normal Vector FW
 
@@ -123,7 +121,7 @@ example for whole log: vmesg -c
 -	After a stupid amount of work, I have most HAL programs compiling with Yocto's GCC 15. It wasn't terribly difficult since it's generally all autotools, but some jank is still involved, and it was still time-consuming.
 -	The camera programs and *some* of the BLE programs are being copied in rather than compiled.
 	-	Why not compile camera programs? Because I would have to add 2GB to the repo and figure out how to use the weird Qualcomm-specific toolchain.
-	-	Why not compile those BLE programs? `ankibluetoothd` and `hci_qcomm_init` are able to compile under GCC 15, but there is some weird low-level issue which makes them unable to properly communicate with a BLE library. So, for now, I am just copying pre-compiled ones in. I will probably try to fix this at some point.
+	-	Why not compile those BLE programs? `ankibluetoothd` and `hci_qcomm_init` are able to compile under GCC 15, but there is some weird low-level issue which makes them unable to properly communicate with a BLE library. So, for now, wire is just copying pre-compiled ones in. wire will probably try to fix this at some point. and then i will clone it :3
 
 ## How this upgrade was done
 
