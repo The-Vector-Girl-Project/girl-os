@@ -123,6 +123,15 @@ example for whole log: vmesg -c
 	-	Why not compile camera programs? Because I would have to add 2GB to the repo and figure out how to use the weird Qualcomm-specific toolchain.
 	-	Why not compile those BLE programs? `ankibluetoothd` and `hci_qcomm_init` are able to compile under GCC 15, but there is some weird low-level issue which makes them unable to properly communicate with a BLE library. So, for now, wire is just copying pre-compiled ones in. wire will probably try to fix this at some point. and then i will clone it :3
 
+## Devs TO DO list
+- Make Vector's Name Start With Girly: [Y]
+- Make Vector Have Trans Eyes By Default: [Y]
+- Tweak the CCIS Screen: [I]
+- Fem Voice: [N]
+- Lashes: [N]
+- Rampost: [Y] (tysm epujelly!!!)
+- Boot Animation: [I]
+- Future Things: [N]
 ## How this upgrade was done
 
 -	Much work upgrading Yocto recipes.
