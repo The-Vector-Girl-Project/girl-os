@@ -10,7 +10,7 @@ This builds the OS, the /anki programs (`girl-os-victor`), and puts it all into 
 
 - /poky/poky -> [yoctoproject/poky](https://github.com/yoctoproject/poky) (master)
 - /poky/meta-openembedded -> [openembedded/meta-openembedded](https://github.com/openembedded/meta-openembedded) (master)
-- /anki/victor -> [wire-os-victor](https://github.com/The-Vector-Girl-Project/girl-os-victor) (main)
+- /anki/victor -> [girl-os-victor](https://github.com/The-Vector-Girl-Project/girl-os-victor) (main)
   - Where all the girly personality code lives :3 - the README there has more info
 - /anki/wired -> [wired](https://github.com/os-vector/wired) (main)
   - Little webserver with configuration options, not girlified :< (yet >:3)
