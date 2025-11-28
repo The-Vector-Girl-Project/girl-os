@@ -14,4 +14,4 @@
 	url = https://github.com/kercre123/vic-cloudless
 [submodule "anki/victor"]
 	path = anki/victor
-	url = https://github.com/The-Vector-Girl-Project/girl-os-victor
+	url = https://github.com/The-Vector-Girl-Project/victor
